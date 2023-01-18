@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>サイコロ</title>
+        <script>
+            //さいころの動作を制御する関数
+            function RollDice()
+            {
+                let dice = Math.floor(Math.random() * 100)  % 6 + 1;
+                document.getElementById("result").innerHTML = dice;
+                // document.getElementById("image").src = dice.toString + ".jpg";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id ="result">サイコロ スタート！</div>
+        <!-- <p>img id = "image src = "1.jpg" width = "50" height = "50"</p> -->
+        <p><button onClick = "RollDice();">サイコロを振る</button></p>
+        <!-- <p id ="result"></p> -->
+    </body>
+</html>
